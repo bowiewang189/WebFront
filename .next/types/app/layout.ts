@@ -1,4 +1,4 @@
-// File: C:\Users\王宝伟\Downloads\wangbw-templates_white (1)\app\layout.tsx
+// File: C:\Users\王宝伟\Downloads\wangbw-templates_with_mandelbrot_zoom_nocap_iter\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

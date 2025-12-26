@@ -1,4 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/templates/chain/page": "app/templates/chain/page.js"
+  "/templates/mandelbrot/page": "app/templates/mandelbrot/page.js"
 }

@@ -21,3 +21,11 @@ Open http://localhost:3000
 
 ## Tips
 - 2560×1440 + 20000 points/steps looks very smooth.
+
+
+### Fourier Image
+- Upload an image + choose Order N
+- Front-end contour extraction (Otsu threshold) + discrete Fourier reconstruction
+- Renders final curve as a white line
+
+- Improved contour extraction using Marching Squares (more stable than greedy boundary ordering)

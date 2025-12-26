@@ -61,7 +61,7 @@ export function renderChainFinal(
       const ang = DI[j] * (SR[j] * BASE * Math.PI * 2) * t + startTheta;
       segs.push({ x: L[j] * Math.cos(ang), y: L[j] * Math.sin(ang) });
     }
-    const joints = cumsumSegments(segs).map((pt) => ({ x: pt.x, y: pt.y + p.centerY }));
+    const joints = cumsumSegments(segs).map((pt) => ({ x: pt.x, y: pt.y + -1.0 }));
     tipTrack.push(joints[joints.length - 1]);
   }
 

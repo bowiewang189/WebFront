@@ -14,8 +14,6 @@ export default function ChainPage() {
   const [lengthCsv, setLengthCsv] = useState("1.17,1.05,1.41");
 
   const [steps, setSteps] = useState(12000);
-  const [centerY, setCenterY] = useState(-1.0);
-
   const [width, setWidth] = useState(1920);
   const [height, setHeight] = useState(1080);
 
@@ -28,11 +26,11 @@ export default function ChainPage() {
       if (speedRatios.length !== lengthRatios.length) {
         throw new Error("speed ratio count must match length ratio count.");
       }
-      return { speedRatios, lengthRatios, steps, centerY, margin: 0.10 };
+      return { speedRatios, lengthRatios, steps, margin: 0.10 };
     } catch {
       return null;
     }
-  }, [speedCsv, lengthCsv, steps, centerY]);
+  }, [speedCsv, lengthCsv, steps]);
 
   function render() {
     setErr("");
@@ -80,7 +78,6 @@ export default function ChainPage() {
               />
 
               <NumberField label="steps (quality)" value={steps} setValue={setSteps} step={500} min={500} />
-              <NumberField label="centerY (move down)" value={centerY} setValue={setCenterY} step={0.1} />
 
               <div className="mt-3 pt-3 border-t border-zinc-800">
                 <NumberField label="Image width" value={width} setValue={setWidth} step={10} min={200} />

@@ -2,6 +2,7 @@ import TemplateCard from "@/components/TemplateCard";
 
 export default function Home() {
   const templates = [
+
     {
       slug: "chain",
       title: "Chain Ribbons (multi-link)",
@@ -12,7 +13,18 @@ export default function Home() {
       title: "Rolling Circle Spirograph",
       desc: "Final image: rolling circle with one arm (auto close length).",
     },
-  ];
+{
+    slug: "fourier",
+    title: "Fourier Image (from contour)",
+    desc: "Upload an image + choose order N → final Fourier curve.",
+  },
+  {
+    slug: "mandelbrot",
+    title: "Mandelbrot (Final Image)",
+    desc: "Input x/y center → zoom in/out and export a Mandelbrot final image.",
+  },
+];
+
 
   return (
     <main>

@@ -1,4 +1,4 @@
-// File: C:\Users\王宝伟\Downloads\wangbw-templates_white (1)\app\templates\chain\page.tsx
+// File: F:\Git\WebFront\app\templates\chain\page.tsx
 import * as entry from '../../../../../app/templates/chain/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
